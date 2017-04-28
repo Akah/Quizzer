@@ -1,0 +1,17 @@
+img#logo{
+  float: none;/*centres the image*/
+}
+div#logbox{
+  margin-left: auto;/*centers the div*/
+  margin-right: auto;
+  padding-top: 5px;/*adds padding to top & bottom*/
+  padding-bottom: 5px;
+  background-color: #fff;/*white background*/
+  width:300px;
+  height: auto;/*height to size of contents*/
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+p#title{
+  font-size: 26px;
+  padding: 0;/*remove default padding*/
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<?php
+//doesn't work
+if(isset($_SESSION['user'])){
+	header("Location: /home.php");
+}
+?>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Quizzer</title>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css"/>
+    <link rel="icon" href="images/purple.svg"/>
+  	<link rel="stylesheet" type="text/css" href="/styles/login.css"/>
+	</head>
+  <body>
+  	<div id="top-bar">
+      <img id="logo" src="images/white.svg"/>
+    </div>
+    <div id="main">
+			<div id="logbox">
+				<p id="title">Login here<p>
+				<form id="login" action="php_functions/login.php" method="POST"><!--php_functions/login.php-->
+					<div id="container">
+						<input id="username" name="userName" placeholder="username" type="text" required="required"/>
+						<input id="password" name="userPass" placeholder="password" type="password" required="required"/>
+						<input id="submit" class="butt" type="submit" value="login"/>
+						<input id="reset" class="butt" type="reset" value="reset"/>
+					</div>
+				</form>
+				<p id="update">don't have an account? <u id="up">sign up!</u></p>
+			</div>
+    </div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+				$('#up').click(function(){
+					//switch login action
+					$('#login').attr('action','php_functions/signup.php');
+					//change text in 'title'
+					$('#title').html('Sign up here');
+					//change value of to sign up
+					$('#submit').attr('value','sign up');
+					//removes text in 'update'
+					$('#update').html('');
+				});
+		</script>
+	</body>
+</html>

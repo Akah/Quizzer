@@ -1,0 +1,39 @@
+/*
+	To do:
+	must:
+		ability to edit quizes
+
+		mention use of cookies - EU law ;)
+	next iteration:
+		load in random order
+		-include loop until all have been answered correctly
+		-actual answer for each option on hover
+		add delay to change new answers
+		timer for how long taken to do quiz
+		remove hover stretch once answer chosen
+
+	bugs:
+		completed 18 mar 1.40am:
+			needing to log in to refresh data : fix in login.php (line 6-8, 21)
+			delete function in settings was deleting first quiz owned by user bcs using wrong variables for arrays and length
+
+	to annotate:
+		13/2
+		corrected broken time
+		14/2
+		converted js arrays to php values
+		15/2
+		changed $quizes to a session variable so that it can be run on the other page - before was only working on each page where the sql was written
+		16/2
+		logic error - sql old+new/2 to calculate average, but actually it's /no. of completed quizes! 16/2 @ 00.54am
+		added extra 1 to quizes completed for the calculation as it was doing one less (beause it was added at the same time)
+		logic error from dumb maths 16/2 @ 01.44am
+		24/3
+		added backend data for the timer feature, now just needs front end scripts to work.
+		30/3
+		username doesn't work for quizzes when in different case to the case defined in the database - quizzes show 404
+		16/4
+		error when deleting quiz as is a foreign key and must be deleted in main table before can be deleted in other table
+
+
+*/

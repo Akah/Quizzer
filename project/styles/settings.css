@@ -1,0 +1,32 @@
+p.quiz{
+  font-size: 15px;
+  display: inline;
+  float: left;
+  margin-left: 30px;
+}
+input#alias{
+  width:217px;
+}
+input.check{
+  width: 40px;
+  float: right;
+  margin-top: 9px;
+  margin-right: 18px;
+}
+div.data{
+  height: 50px;
+}
+div.box{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 300px;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  padding: 10px;
+  font-size: 22px;
+}
+input.range{
+  margin-bottom: 50px;
+}
